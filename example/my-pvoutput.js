@@ -7,4 +7,4 @@ var pvoutput = new PVoutputAPI({
     systemId: "xxx"
 });
 
-module.exports = smappee;
+module.exports = pvoutput;

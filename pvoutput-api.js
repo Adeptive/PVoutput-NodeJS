@@ -41,4 +41,4 @@ function PvoutputAPI(settings) {
 
 }
 
-module.exports = SmappeeAPI;
+module.exports = PvoutputAPI;
