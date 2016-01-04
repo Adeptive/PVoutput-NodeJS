@@ -31,10 +31,6 @@ function PvoutputAPI(settings) {
         };
 
         request.get(options, function (err, httpResponse, body) {
-            if (this.debug) {
-                console.log("Send to: " + options.url);
-                console.log(body);
-            }
             callback(httpResponse.statusCode, body, options.url);
         });
     };
