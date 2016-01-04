@@ -35,7 +35,7 @@ function PvoutputAPI(settings) {
                 console.log("Send to: " + options.url);
                 console.log(body);
             }
-            callback(httpResponse.statusCode, body);
+            callback(httpResponse.statusCode, body, options.url);
         });
     };
 
