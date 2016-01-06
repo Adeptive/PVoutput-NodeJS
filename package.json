@@ -1,6 +1,6 @@
 {
   "name": "pvoutput-nodejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./pvoutput-api.js",
   "dependencies": {
     "moment": "^2.10.6",
