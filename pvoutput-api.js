@@ -14,17 +14,23 @@ function PvoutputAPI(settings) {
         var date = timestamp.format('YYYYMMDD');
         var time = timestamp.format('HH:mm');
 
-        var query = querystring.stringify({
+        var params = {
             key: apiKey,
             sid: systemId,
             d: date,
             t: time,
 
             v1: solarWatt,
-            v2: solarWattHour,
             v3: consumptionWatt,
             v4: consumptionWattHour
-        });
+        };
+
+        if (solarWattHour != 0) {
+            options.v2 = solarWattHour;
+        }
+
+        var query = querystring.stringify(params);
+
 
         var options =  {
             url: 'http://pvoutput.org/service/r2/addstatus.jsp?' + query
