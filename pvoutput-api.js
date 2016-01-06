@@ -26,7 +26,7 @@ function PvoutputAPI(settings) {
         };
 
         if (solarWattHour != 0) {
-            options.v2 = solarWattHour;
+            params.v2 = solarWattHour;
         }
 
         var query = querystring.stringify(params);
