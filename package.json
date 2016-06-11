@@ -4,6 +4,7 @@
   "main": "./pvoutput-api.js",
   "dependencies": {
     "moment": "^2.10.6",
-    "request": "^2.67.0"
+    "request": "^2.67.0",
+    "request-promise": "^3.0.0"
   }
 }

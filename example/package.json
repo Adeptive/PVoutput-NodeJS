@@ -2,7 +2,7 @@
   "name": "pvoutput-nodejs-example",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./pvoutput-api-test.js"
+    "start": "node ./pvoutput.js"
   },
   "dependencies": {
     "moment": "^2.10.6",
